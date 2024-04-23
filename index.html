@@ -109,15 +109,30 @@
             object-fit: cover; 
             object-position: center 15%;
         }
-        .image-container::after {
+        .image-container img {
+            width: 50%; 
+            /* height: 100%;  */
+            object-fit: contain; 
+        }
+        .navlogo {
+            width: 10%;
+        }
+        #logo-nav-bar {
+            width: 100%;
+        }
+        
+       
+        
+        
+        /* .image-container::after {
             content: ""; 
             display: block;
-            width: 22rem;
+            width: 12rem;
             height: 1px;
             background: #fff;
             position: relative;
             bottom: -1px;
-        }
+        } */
         @media (min-width: 576px){
             .col-sm-3{
                 flex: 0 0 50%;
@@ -168,27 +183,26 @@
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-            <div>
-                <div class="image-container">
-                    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                        <img id="logo-nav-bar" src="assets/img/logo/mm2024.png" alt=""></a>
-                </div>
+                <!-- <div class="image-container"> -->
+                    <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"> -->
+                        <img id="logo-nav-bar" src="assets/img/logo/mm2024.png" alt="">
+                    <!-- </a> -->
+                <!-- </div> -->
                 <!-- <hr> -->
-                <p style="color: #ffffff;font: 0.9rem;">Trustworthy Visual Data Processing</p>
-            </div>
+                <!-- <p style="color: #ffffff;font: 0.3rem;">Trustworthy Visual Data Processing</p> -->
         </div>
         <div class="container">
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#topics">Call for papers</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#topics" id="CallforPapers">Call for Papers</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#paper">programme</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#paper" id="Programme">Programme</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
-                            href="#submission">Submission</a>
+                            href="#submission" id="Submission">Submission</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
